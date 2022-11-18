@@ -97,6 +97,7 @@ export class SparqlForceComponent implements OnInit {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes.data.currentValue) {
+      console.log('ds')
       this.data = changes.data.currentValue;
       this.redraw();
     }
